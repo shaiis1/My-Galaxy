@@ -1,0 +1,52 @@
+.table-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: start; /* Center vertically */
+    overflow-x: auto; /* Allows table to scroll horizontally */
+  }
+  
+  table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    width: 50%;
+    text-align: center; /* Center text horizontally */
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+
+  th{
+      background-color:blueviolet;
+  }
+  
+  th:last-child, td:last-child {
+    border-right: none;
+  }
+
+  /* Selects odd rows */
+table tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Light gray for odd rows */
+  }
+  
+  /* Selects even rows */
+  table tr:nth-child(even) {
+    background-color: #ffffff; /* White for even rows */
+  }
+
+  .sort-btn{
+      height: 2rem;
+      border: 1px solid;
+      border-radius: 8px;
+      background-color: blanchedalmond;
+      margin: 5px;
+      font-size: medium;
+      cursor: pointer;
+  }
+
+  .table-container table tbody tr:hover {
+    background-color:lightcyan; /* Light gray background on hover */
+    cursor: pointer; /* Change cursor to indicate the row is interactive */
+  }
